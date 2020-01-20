@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/oott123/typescript-monorepo-generator.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "main": "generators/index.js",
   "license": "UNLICENSED",
   "scripts": {
