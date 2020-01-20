@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./generators"
+  },
+  "include": [
+    "./src",
+    "./.eslintrc.js",
+    "./jest.config.js"
+  ],
+  "exclude": [
+    "./src/app/templates",
+    "./src/packages/templates"
+  ]
+}

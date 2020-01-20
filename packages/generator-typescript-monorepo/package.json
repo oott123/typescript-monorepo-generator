@@ -1,0 +1,23 @@
+{
+  "name": "generator-typescript-monorepo",
+  "version": "0.0.0",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "copyfiles -u 1 -a src/**/templates/**/* generators/",
+    "watch": "tsc --watch --preserveWatchOutput",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "rimraf generators"
+  },
+  "dependencies": {
+    "yeoman-generator": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/yeoman-generator": "^3.1.4",
+    "copyfiles": "^2.2.0"
+  }
+}

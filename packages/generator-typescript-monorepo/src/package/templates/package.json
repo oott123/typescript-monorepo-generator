@@ -1,0 +1,14 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "node -r source-map-support/register dist/app.js",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "watch": "tsc --watch --preserveWatchOutput",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "rimraf dist"
+  }
+}
