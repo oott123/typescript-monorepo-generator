@@ -4,6 +4,10 @@
   "files": [
     "generators"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oott123/typescript-monorepo-generator.git"
+  },
   "main": "generators/index.js",
   "license": "UNLICENSED",
   "scripts": {
