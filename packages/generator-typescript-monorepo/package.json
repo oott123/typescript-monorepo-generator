@@ -15,7 +15,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "tsc",
-    "postbuild": "copyfiles -u 1 -a src/**/templates/**/* generators/",
+    "postbuild": "node copy.js",
     "watch": "tsc --watch --preserveWatchOutput",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean": "rimraf generators"
@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@types/yeoman-generator": "^3.1.4",
-    "copyfiles": "^2.2.0"
+    "copyfiles": "^2.2.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6"
   }
 }

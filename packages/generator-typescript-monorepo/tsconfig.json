@@ -10,6 +10,7 @@
   ],
   "exclude": [
     "./src/app/templates",
-    "./src/packages/templates"
+    "./src/packages/templates",
+    "./src/react/templates"
   ]
 }

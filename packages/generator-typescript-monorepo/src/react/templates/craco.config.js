@@ -1,0 +1,11 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+const reactHotReloadPlugin = require('craco-plugin-react-hot-reload')
+
+module.exports = {
+  plugins: [
+    {
+      plugin: reactHotReloadPlugin,
+    },
+  ],
+}
