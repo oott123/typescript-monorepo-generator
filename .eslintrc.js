@@ -14,7 +14,6 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'no-console': 'off',
-    '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
@@ -24,7 +23,7 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json', './packages/*/tsconfig.json'],
+    project: ['./tsconfig.json', './packages/*/tsconfig.json', './packages/@*/*/tsconfig.json'],
   },
   overrides: [
     {
